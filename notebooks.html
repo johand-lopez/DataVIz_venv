@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Dataset &#8212; My sample book</title>
+    <title>Analisis Exploratorio de Datos &#8212; My sample book</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -62,8 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
-    <link rel="prev" title="Markdown Files" href="markdown.html" />
+    <link rel="prev" title="Proyecto Visualización de Datos" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -177,17 +176,15 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Proyecto Visualización de Datos
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Dataset</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Analisis Exploratorio de Datos</a></li>
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -373,7 +370,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Dataset</h1>
+    <h1>Analisis Exploratorio de Datos</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -383,7 +380,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Dataset</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Analisis Exploratorio de Datos</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lista-de-variables">Lista de Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocesamiento">Preprocesamiento</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#librerias">Librerías</a></li>
@@ -404,9 +401,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-datos-atipicos">Analisis de Datos Atipicos</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-univariado">Analisis univariado</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-univariado">Analisis univariado</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-binarias">Variables Binarias</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-las-variables-binarias">Interpretación de las Variables Binarias:</a></li>
 </ul>
@@ -470,7 +465,7 @@ document.write(`
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-bivariado">Análisis Bivariado</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion">Interpretación:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#medidas-y-analisis-de-los-graficos"><strong>Medidas y Análisis de los Gráficos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#medidas-y-analisis-de-los-graficos">Medidas y Análisis de los Gráficos</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#age-vs-is-fit"><strong>age vs is_fit</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mediana"><strong>Mediana</strong></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rangos-intercuartilicos-iqr"><strong>Rangos Intercuartílicos (IQR)</strong></a></li>
@@ -489,14 +484,36 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Valores Atípicos (Outliers)</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-las-medidas">Análisis de las Medidas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Mediana</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Rango Intercuartílico (IQR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Análisis de las Medidas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Mediana</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Rango Intercuartílico (IQR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Análisis de las Medidas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Mediana</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Rango Intercuartílico (IQR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">Análisis de las Medidas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Mediana</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">Rango Intercuartílico (IQR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">Análisis de las Medidas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">Mediana</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">Rango Intercuartílico (IQR)</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-multivariado">Analisis multivariado</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Interpretación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">Interpretación</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones">Conclusiones</a></li>
 </ul>
 
             </nav>
@@ -509,22 +526,22 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="dataset">
-<h1>Dataset<a class="headerlink" href="#dataset" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="analisis-exploratorio-de-datos">
+<h1>Analisis Exploratorio de Datos<a class="headerlink" href="#analisis-exploratorio-de-datos" title="Link to this heading">#</a></h1>
 <p>Dataset: <a class="reference external" href="https://www.kaggle.com/datasets/muhammedderric/fitness-classification-dataset-synthetic?select=fitness_dataset.csv">https://www.kaggle.com/datasets/muhammedderric/fitness-classification-dataset-synthetic?select=fitness_dataset.csv</a></p>
 <section id="lista-de-variables">
 <h2>Lista de Variables<a class="headerlink" href="#lista-de-variables" title="Link to this heading">#</a></h2>
-<p><strong>age</strong>: Edad del individuo en años.
-<strong>height_cm</strong>: Altura en centímetros.
-<strong>weight_kg</strong>: Peso en kilogramos.
-<strong>heart_rate</strong>: Frecuencia cardíaca en reposo en latidos por minuto.
-<strong>blood_pressure</strong>: Presión arterial sistólica en mmHg.
-<strong>sleep_hours</strong>: Promedio de horas de sueño al día.
-<strong>nutrition_quality</strong>: Puntuación de calidad nutricional diaria entre 0 y 10.
-<strong>activity_index</strong>: Puntuación del nivel de actividad física entre 1 y 5.
-<strong>smokes</strong>: ¿fuma?
-<strong>gender</strong>: Género del individuo.
-<strong>is_fit</strong>: Variable objetivo (la persona está en forma o no).</p>
+<p><strong>age</strong>: Edad del individuo en años.</p>
+<p><strong>height_cm</strong>: Altura en centímetros.</p>
+<p><strong>weight_kg</strong>: Peso en kilogramos.</p>
+<p><strong>heart_rate</strong>: Frecuencia cardíaca en reposo en latidos por minuto.</p>
+<p><strong>blood_pressure</strong>: Presión arterial sistólica en mmHg.</p>
+<p><strong>sleep_hours</strong>: Promedio de horas de sueño al día.</p>
+<p><strong>nutrition_quality</strong>: Puntuación de calidad nutricional diaria entre 0 y 10.</p>
+<p><strong>activity_index</strong>: Puntuación del nivel de actividad física entre 1 y 5.</p>
+<p><strong>smokes</strong>: ¿fuma?</p>
+<p><strong>gender</strong>: Género del individuo.</p>
+<p><strong>is_fit</strong>: Variable objetivo (la persona está en forma o no).</p>
 </section>
 <section id="preprocesamiento">
 <h2>Preprocesamiento<a class="headerlink" href="#preprocesamiento" title="Link to this heading">#</a></h2>
@@ -958,7 +975,6 @@ No se rechaza H0: la variable parece provenir de una distribución normal.
 
 <span class="n">df</span><span class="p">[</span><span class="s2">&quot;sleep_hours&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;sleep_hours&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">median_sleep</span><span class="p">)</span>
 
-<span class="c1"># 3. Visualizar nuevamente el mapa de valores faltantes</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">(),</span> <span class="n">cbar</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Mapa de valores faltantes después de imputar &#39;sleep_hours&#39;&quot;</span><span class="p">)</span>
@@ -981,13 +997,11 @@ Cantidad de valores faltantes en &#39;sleep_hour&#39; antes de imputar: 160
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 
-<span class="c1"># Histograma antes de imputación</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">df_antes</span><span class="p">[</span><span class="s2">&quot;sleep_hours&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Antes de imputación&quot;</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Horas de sueño&quot;</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Frecuencia&quot;</span><span class="p">)</span>
 
-<span class="c1"># Histograma después de imputación</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;sleep_hours&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightgreen&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Después de imputación&quot;</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Horas de sueño&quot;</span><span class="p">)</span>
@@ -1013,7 +1027,6 @@ Cantidad de valores faltantes en &#39;sleep_hour&#39; antes de imputar: 160
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sleep_before</span> <span class="o">=</span> <span class="n">df_antes</span><span class="p">[</span><span class="s2">&quot;sleep_hours&quot;</span><span class="p">]</span>
 <span class="n">sleep_after</span>  <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;sleep_hours&quot;</span><span class="p">]</span>
 
-<span class="c1"># Prueba KS de dos muestras</span>
 <span class="n">stat</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">ks_2samp</span><span class="p">(</span><span class="n">sleep_before</span><span class="p">,</span> <span class="n">sleep_after</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prueba de Kolmogorov-Smirnov para &#39;sleep_hour&#39;&quot;</span><span class="p">)</span>
@@ -1124,7 +1137,6 @@ dtype: int64
 
 <span class="n">variables_numericas</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">variables_predictores</span> <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">is_numeric_dtype</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">])]</span>
 
-<span class="c1"># BOXPLOTS ANTES DE CAPPING</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 
 <span class="n">box</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span>
@@ -1136,7 +1148,7 @@ dtype: int64
     <span class="n">capprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.2</span><span class="p">),</span>
     <span class="n">boxprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">),</span>
     <span class="n">flierprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="n">markerfacecolor</span><span class="o">=</span><span class="s2">&quot;darkorange&quot;</span><span class="p">,</span> <span class="n">markeredgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span>
-                    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># OUTLIERS resaltados</span>
+                    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="p">)</span>
 
 <span class="n">colors</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">Pastel1</span><span class="o">.</span><span class="n">colors</span>  
@@ -1149,11 +1161,9 @@ dtype: int64
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
-<span class="c1"># APLICAR CAPPING</span>
 <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">variables_numericas</span><span class="p">:</span>
     <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">capping_iqr</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">])</span>
 
-<span class="c1"># BOXPLOTS DESPUÉS DE CAPPING</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 
 <span class="n">box2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span>
@@ -1186,10 +1196,10 @@ dtype: int64
 </div>
 <p>Tras aplicar el capping, los boxplots muestran una distribución más uniforme y sin valores atípicos extremos, lo que facilita un análisis más estable y representativo de las variables.</p>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="analisis-univariado">
-<h1>Analisis univariado<a class="headerlink" href="#analisis-univariado" title="Link to this heading">#</a></h1>
+<section id="analisis-univariado">
+<h2>Analisis univariado<a class="headerlink" href="#analisis-univariado" title="Link to this heading">#</a></h2>
 <p>El Análisis Univariado es la primera fase del análisis exploratorio de datos. Se enfoca en el estudio individual de cada variable para entender su distribución, características y valores atípicos. Esto permite identificar patrones y la calidad de los datos antes de un análisis más complejo.</p>
+</section>
 <section id="variables-binarias">
 <h2>Variables Binarias<a class="headerlink" href="#variables-binarias" title="Link to this heading">#</a></h2>
 <p>Se genera un doble gráfico para cada variable binaria, permitiendo comparar su distribución mediante:</p>
@@ -1201,10 +1211,8 @@ dtype: int64
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;skyblue&quot;</span><span class="p">]</span>
 
-<span class="c1"># Crear figura</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 
-<span class="c1"># ---- FIGURA 1: smokes ----</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;smokes&quot;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Frecuencia de smokes&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Categorías&quot;</span><span class="p">)</span>
@@ -1214,7 +1222,6 @@ dtype: int64
                      <span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">+</span> <span class="n">p</span><span class="o">.</span><span class="n">get_width</span><span class="p">()</span> <span class="o">/</span> <span class="mf">2.</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">get_height</span><span class="p">()),</span> 
                      <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
 
-<span class="c1"># ---- FIGURA 2: gender ----</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;gender&quot;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Frecuencia de gender&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Categorías&quot;</span><span class="p">)</span>
@@ -1224,7 +1231,6 @@ dtype: int64
                      <span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">+</span> <span class="n">p</span><span class="o">.</span><span class="n">get_width</span><span class="p">()</span> <span class="o">/</span> <span class="mf">2.</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">get_height</span><span class="p">()),</span> 
                      <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
 
-<span class="c1"># ---- FIGURA 3: is_fit ----</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;is_fit&quot;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Frecuencia de is_fit&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Categorías&quot;</span><span class="p">)</span>
@@ -1234,7 +1240,6 @@ dtype: int64
                      <span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">+</span> <span class="n">p</span><span class="o">.</span><span class="n">get_width</span><span class="p">()</span> <span class="o">/</span> <span class="mf">2.</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">get_height</span><span class="p">()),</span> 
                      <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
 
-<span class="c1"># Ajustar diseño</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -1270,7 +1275,6 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:149
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 
-<span class="c1"># ---- FIGURA 1: smokes ----</span>
 <span class="n">smokes_counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;smokes&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">smokes_counts</span><span class="p">,</span> 
             <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">cat</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">val</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%)&quot;</span> <span class="k">for</span> <span class="n">cat</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">smokes_counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">smokes_counts</span><span class="o">.</span><span class="n">values</span><span class="p">)],</span>
@@ -1280,7 +1284,6 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:149
             <span class="n">wedgeprops</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;edgecolor&#39;</span><span class="p">:</span> <span class="s1">&#39;white&#39;</span><span class="p">})</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Distribución de smokes&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
 
-<span class="c1"># ---- FIGURA 2: gender ----</span>
 <span class="n">gender_counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;gender&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">gender_counts</span><span class="p">,</span> 
             <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">cat</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">val</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%)&quot;</span> <span class="k">for</span> <span class="n">cat</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">gender_counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">gender_counts</span><span class="o">.</span><span class="n">values</span><span class="p">)],</span>
@@ -1290,7 +1293,6 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:149
             <span class="n">wedgeprops</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;edgecolor&#39;</span><span class="p">:</span> <span class="s1">&#39;white&#39;</span><span class="p">})</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Distribución de gender&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
 
-<span class="c1"># ---- FIGURA 3: is_fit ----</span>
 <span class="n">isfit_counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;is_fit&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">isfit_counts</span><span class="p">,</span> 
             <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">cat</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">val</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%)&quot;</span> <span class="k">for</span> <span class="n">cat</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">isfit_counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">isfit_counts</span><span class="o">.</span><span class="n">values</span><span class="p">)],</span>
@@ -1432,16 +1434,15 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:149
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numeric_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;int64&quot;</span><span class="p">])</span>
 
 <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">numeric_cols</span><span class="p">:</span>
-    <span class="c1"># Calcular skew y kurtosis</span>
+
     <span class="n">col_skew</span> <span class="o">=</span> <span class="n">skew</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
-    <span class="n">col_kurt</span> <span class="o">=</span> <span class="n">kurtosis</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">fisher</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># fisher=False para que 3 sea normal</span>
+    <span class="n">col_kurt</span> <span class="o">=</span> <span class="n">kurtosis</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">fisher</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Variable: </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Kurtosis: </span><span class="si">{</span><span class="n">col_kurt</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Skew: </span><span class="si">{</span><span class="n">col_skew</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">40</span><span class="p">)</span>
     
-    <span class="c1"># Histograma de frecuencias</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
     <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">bins</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Frecuencias de </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
@@ -1478,16 +1479,18 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:111
 </pre></div>
 </div>
 <img alt="_images/7686dd8e99e013637bc670d0aee7467dc21d704caec487ef127c252c2e70c096.png" src="_images/7686dd8e99e013637bc670d0aee7467dc21d704caec487ef127c252c2e70c096.png" />
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
-  if pd.api.types.is_categorical_dtype(vector):
-C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
-  with pd.option_context(&#39;mode.use_inf_as_na&#39;, True):
-</pre></div>
-</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variable: weight_kg
 Kurtosis: 2.75
 Skew: 0.22
 ----------------------------------------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+  if pd.api.types.is_categorical_dtype(vector):
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+  with pd.option_context(&#39;mode.use_inf_as_na&#39;, True):
 </pre></div>
 </div>
 <img alt="_images/b52602280e79ebc043db069bc35c37c506f05105f83e6e1339a625ccb0bd82e9.png" src="_images/b52602280e79ebc043db069bc35c37c506f05105f83e6e1339a625ccb0bd82e9.png" />
@@ -1672,16 +1675,15 @@ kurtosis &gt; 3: se denomina leptocúrtica (distribución con colas más gruesas
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numeric_cols2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;float64&quot;</span><span class="p">])</span>
 
 <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">numeric_cols2</span><span class="p">:</span>
-    <span class="c1"># Calcular skew y kurtosis</span>
+
     <span class="n">col_skew</span> <span class="o">=</span> <span class="n">skew</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
-    <span class="n">col_kurt</span> <span class="o">=</span> <span class="n">kurtosis</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">fisher</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># fisher=False para que 3 sea normal</span>
+    <span class="n">col_kurt</span> <span class="o">=</span> <span class="n">kurtosis</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">fisher</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Variable: </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Kurtosis: </span><span class="si">{</span><span class="n">col_kurt</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Skew: </span><span class="si">{</span><span class="n">col_skew</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">40</span><span class="p">)</span>
     
-    <span class="c1"># Histograma de frecuencias</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
     <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">bins</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Frecuencias de </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
@@ -1731,16 +1733,16 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:111
 </pre></div>
 </div>
 <img alt="_images/80727165969823b16e2067de99c9b6ca7cdc5da785bbe8ad90bbffedf860293e.png" src="_images/80727165969823b16e2067de99c9b6ca7cdc5da785bbe8ad90bbffedf860293e.png" />
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
-  if pd.api.types.is_categorical_dtype(vector):
-C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
-  with pd.option_context(&#39;mode.use_inf_as_na&#39;, True):
-</pre></div>
-</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variable: nutrition_quality
 Kurtosis: 1.80
 Skew: 0.01
 ----------------------------------------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+  if pd.api.types.is_categorical_dtype(vector):
+C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+  with pd.option_context(&#39;mode.use_inf_as_na&#39;, True):
 </pre></div>
 </div>
 <img alt="_images/104c344ff90a2dcb53e0f2bad8a580f1f5bcd310b816467432574896b1b5c0f9.png" src="_images/104c344ff90a2dcb53e0f2bad8a580f1f5bcd310b816467432574896b1b5c0f9.png" />
@@ -1858,16 +1860,13 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:111
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>
     <span class="n">nombre_col</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     
-    <span class="c1"># Calcular media y desviación estándar ignorando NaN</span>
     <span class="n">media</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">nombre_col</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">skipna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">desviacion</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">nombre_col</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">skipna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     
-    <span class="c1"># Coeficiente de variación</span>
     <span class="n">coef_variacion</span> <span class="o">=</span> <span class="p">(</span><span class="n">desviacion</span> <span class="o">/</span> <span class="n">media</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Columna: </span><span class="si">{</span><span class="n">nombre_col</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El coeficiente de variación es: </span><span class="si">{</span><span class="n">coef_variacion</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     
-    <span class="c1"># Boxplot</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
     <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">nombre_col</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dispersión de </span><span class="si">{</span><span class="n">nombre_col</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
@@ -1949,14 +1948,12 @@ El coeficiente de variación es: 37.89%
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
     <span class="n">nombre_col</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     
-    <span class="c1"># Agrupar y calcular porcentaje</span>
     <span class="n">df_summary</span> <span class="o">=</span> <span class="p">(</span>
         <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">nombre_col</span><span class="p">)[</span><span class="s1">&#39;is_fit&#39;</span><span class="p">]</span>
         <span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
         <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;pct_yes&#39;</span><span class="p">)</span>
     <span class="p">)</span>
     
-    <span class="c1"># Barplot</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
     <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span>
         <span class="n">data</span><span class="o">=</span><span class="n">df_summary</span><span class="p">,</span>
@@ -1966,7 +1963,6 @@ El coeficiente de variación es: 37.89%
         <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span>
     <span class="p">)</span>
     
-    <span class="c1"># Agregar etiquetas de porcentaje</span>
     <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df_summary</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;pct_yes&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;pct_yes&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">,</span> 
                  <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
@@ -2011,7 +2007,7 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:149
 <p>Se generan graficos de barras para analizar la relación entre variables númericas discretas y el estado de forma en la población estudiada. Con el fin de identificar qué variables presentan mayores proporciones.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">integer_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;int&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span>  <span class="c1"># selecciona solo columnas enteras</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">integer_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;int&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span>
 
 <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">integer_cols</span><span class="p">:</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -2055,7 +2051,7 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:149
 </div>
 </section>
 <section id="medidas-y-analisis-de-los-graficos">
-<h2><strong>Medidas y Análisis de los Gráficos</strong><a class="headerlink" href="#medidas-y-analisis-de-los-graficos" title="Link to this heading">#</a></h2>
+<h2>Medidas y Análisis de los Gráficos<a class="headerlink" href="#medidas-y-analisis-de-los-graficos" title="Link to this heading">#</a></h2>
 <section id="age-vs-is-fit">
 <h3><strong>age vs is_fit</strong><a class="headerlink" href="#age-vs-is-fit" title="Link to this heading">#</a></h3>
 <section id="mediana">
@@ -2200,7 +2196,115 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:149
 <img alt="_images/b3ab3c2f2c0e62ce3a1c9d2880efba4d3b6a3b4d3ce6aecb81d39faeee9c9bf8.png" src="_images/b3ab3c2f2c0e62ce3a1c9d2880efba4d3b6a3b4d3ce6aecb81d39faeee9c9bf8.png" />
 </div>
 </div>
+<p><strong>frecuencia cardíaca (heart_rate)</strong></p>
 </section>
+</section>
+<section id="analisis-de-las-medidas">
+<h3>Análisis de las Medidas<a class="headerlink" href="#analisis-de-las-medidas" title="Link to this heading">#</a></h3>
+</section>
+<section id="id21">
+<h3>Mediana<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Grupo “yes” (sí):</strong> La línea central de la caja, que representa la mediana, se ubica en aproximadamente <strong>71 pulsaciones por minuto</strong>.</p></li>
+<li><p><strong>Grupo “no”:</strong> La mediana se encuentra en aproximadamente <strong>70 pulsaciones por minuto</strong>.</p></li>
+</ul>
+<p>La mediana es similar en ambos grupos, lo que sugiere que la frecuencia cardíaca promedio en reposo no es un factor determinante por sí solo para el estado físico en esta muestra.</p>
+</section>
+<section id="id22">
+<h3>Rango Intercuartílico (IQR)<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
+<p>La caja de cada grupo muestra el <strong>rango intercuartílico (IQR)</strong>, que contiene el 50% central de los datos.</p>
+<ul class="simple">
+<li><p><strong>Grupo “yes”:</strong> El IQR abarca desde aproximadamente <strong>62 hasta 79 pulsaciones por minuto</strong>.</p></li>
+<li><p><strong>Grupo “no”:</strong> El IQR va desde aproximadamente <strong>62 hasta 78 pulsaciones por minuto</strong>.</p></li>
+</ul>
+<p>La dispersión de los datos en la mitad central de la distribución es muy similar para ambos grupos.</p>
+<hr class="docutils" />
+<p><strong>presión arterial</strong></p>
+</section>
+<section id="id23">
+<h3>Análisis de las Medidas<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
+</section>
+<section id="id24">
+<h3>Mediana<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Grupo “yes” (sí):</strong> La línea central de la caja, que representa la mediana, se ubica en aproximadamente <strong>120 mmHg</strong>.</p></li>
+<li><p><strong>Grupo “no”:</strong> La mediana se encuentra en aproximadamente <strong>121 mmHg</strong>.</p></li>
+</ul>
+<p>La mediana es muy similar en ambos grupos, lo que sugiere que la presión arterial promedio en reposo no es un factor que distinga significativamente entre ellos.</p>
+</section>
+<section id="id25">
+<h3>Rango Intercuartílico (IQR)<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
+<p>La caja de cada grupo muestra el <strong>rango intercuartílico (IQR)</strong>, que contiene el 50% central de los datos.</p>
+<ul class="simple">
+<li><p><strong>Grupo “yes”:</strong> El IQR abarca desde aproximadamente <strong>109 hasta 129 mmHg</strong>.</p></li>
+<li><p><strong>Grupo “no”:</strong> El IQR va desde aproximadamente <strong>110 hasta 131 mmHg</strong>.</p></li>
+</ul>
+<p>La dispersión de los datos en la mitad central de la distribución es muy similar para ambos grupos.</p>
+<p>En conclusión, la distribución de la presión arterial es muy similar en ambos grupos, con medianas y rangos intercuartílicos casi idénticos. La única diferencia notable es la presencia de un valor atípico en el grupo con un buen estado físico, que podría indicar un caso inusual con una presión arterial elevada.</p>
+<hr class="docutils" />
+<p><strong>horas de sueño</strong></p>
+</section>
+</section>
+<section id="id26">
+<h2>Análisis de las Medidas<a class="headerlink" href="#id26" title="Link to this heading">#</a></h2>
+<section id="id27">
+<h3>Mediana<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Grupo “yes” (sí):</strong> La línea central de la caja, que representa la mediana, se ubica en aproximadamente <strong>7.6 horas</strong>.</p></li>
+<li><p><strong>Grupo “no”:</strong> La mediana se encuentra en aproximadamente <strong>7.5 horas</strong>.</p></li>
+</ul>
+<p>La mediana es muy similar en ambos grupos, lo que sugiere que la cantidad promedio de horas de sueño no es un factor que distinga significativamente entre ellos.</p>
+</section>
+<section id="id28">
+<h3>Rango Intercuartílico (IQR)<a class="headerlink" href="#id28" title="Link to this heading">#</a></h3>
+<p>La caja de cada grupo muestra el <strong>rango intercuartílico (IQR)</strong>, que contiene el 50% central de los datos.</p>
+<ul class="simple">
+<li><p><strong>Grupo “yes”:</strong> El IQR abarca desde aproximadamente <strong>6.8 hasta 8.7 horas</strong>.</p></li>
+<li><p><strong>Grupo “no”:</strong> El IQR va desde aproximadamente <strong>6.5 hasta 8.2 horas</strong>.</p></li>
+</ul>
+<p>La dispersión de los datos en la mitad central de la distribución es muy similar para ambos grupos. El grupo “yes” tiene un rango intercuartílico ligeramente más amplio.</p>
+<hr class="docutils" />
+<p><strong>calidad nutricional</strong></p>
+</section>
+</section>
+<section id="id29">
+<h2>Análisis de las Medidas<a class="headerlink" href="#id29" title="Link to this heading">#</a></h2>
+<section id="id30">
+<h3>Mediana<a class="headerlink" href="#id30" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Grupo “yes” (sí):</strong> La línea central de la caja, que representa la mediana, se ubica en aproximadamente <strong>6.3</strong>.</p></li>
+<li><p><strong>Grupo “no”:</strong> La mediana se encuentra en aproximadamente <strong>4.2</strong>.</p></li>
+</ul>
+<p>Esto indica que el grupo con un buen estado físico tiene una mediana de calidad nutricional significativamente más alta que el grupo que no lo tiene.</p>
+</section>
+<section id="id31">
+<h3>Rango Intercuartílico (IQR)<a class="headerlink" href="#id31" title="Link to this heading">#</a></h3>
+<p>La caja de cada grupo muestra el <strong>rango intercuartílico (IQR)</strong>, que contiene el 50% central de los datos.</p>
+<ul class="simple">
+<li><p><strong>Grupo “yes”:</strong> El IQR abarca desde aproximadamente <strong>3.7 hasta 8.3</strong>.</p></li>
+<li><p><strong>Grupo “no”:</strong> El IQR va desde aproximadamente <strong>2.1 hasta 6.7</strong>.</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>índice de actividad</strong></p>
+</section>
+</section>
+<section id="id32">
+<h2>Análisis de las Medidas<a class="headerlink" href="#id32" title="Link to this heading">#</a></h2>
+<section id="id33">
+<h3>Mediana<a class="headerlink" href="#id33" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Grupo “yes” (sí):</strong> La línea central de la caja, que representa la mediana, se ubica en aproximadamente <strong>3.5</strong>.</p></li>
+<li><p><strong>Grupo “no”:</strong> La mediana se encuentra en aproximadamente <strong>2.6</strong>.</p></li>
+</ul>
+<p>Esto indica que el grupo con un buen estado físico tiene una mediana de índice de actividad significativamente más alta que el grupo que no lo tiene.</p>
+</section>
+<section id="id34">
+<h3>Rango Intercuartílico (IQR)<a class="headerlink" href="#id34" title="Link to this heading">#</a></h3>
+<p>La caja de cada grupo muestra el <strong>rango intercuartílico (IQR)</strong>, que contiene el 50% central de los datos.</p>
+<ul class="simple">
+<li><p><strong>Grupo “yes”:</strong> El IQR abarca desde aproximadamente <strong>2.7 hasta 4.4</strong>.</p></li>
+<li><p><strong>Grupo “no”:</strong> El IQR va desde aproximadamente <strong>1.8 hasta 3.5</strong>.</p></li>
+</ul>
 </section>
 </section>
 </section>
@@ -2216,7 +2320,6 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:149
 
 <span class="n">df_cor</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
-<span class="c1"># Convertir is_fit a 0/1</span>
 <span class="n">df_cor</span><span class="p">[</span><span class="s1">&#39;is_fit&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_cor</span><span class="p">[</span><span class="s1">&#39;is_fit&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s2">&quot;yes&quot;</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
 
 <span class="n">cor_matrix</span> <span class="o">=</span> <span class="n">df_cor</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
@@ -2226,7 +2329,7 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:149
     <span class="n">cor_matrix</span><span class="p">,</span> 
     <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
     <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">,</span> 
-    <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;RdBu_r&quot;</span><span class="p">,</span>  <span class="c1"># De azul (negativa) a rojo (positiva)</span>
+    <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;RdBu_r&quot;</span><span class="p">,</span>
     <span class="n">center</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
     <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
     <span class="n">linecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span>
@@ -2242,8 +2345,8 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:149
 <img alt="_images/9806e226cab146d3ea82de8cac30c401161560fcff2004db5785d6295f85d6ca.png" src="_images/9806e226cab146d3ea82de8cac30c401161560fcff2004db5785d6295f85d6ca.png" />
 </div>
 </div>
-<section id="id21">
-<h2>Interpretación<a class="headerlink" href="#id21" title="Link to this heading">#</a></h2>
+<section id="id35">
+<h2>Interpretación<a class="headerlink" href="#id35" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>La relación más fuerte con el estado de forma física (is_fit) se da con las siguientes variables:</p></li>
 </ul>
@@ -2251,6 +2354,31 @@ C:\Users\johan\miniconda3\envs\ml_venv\lib\site-packages\seaborn\_oldcore.py:149
 Correlación negativa: La variable que tiene la relación negativa más fuerte con estar en buena forma física es la edad (-0.21). Esto significa que, a mayor edad, la probabilidad de estar en buena forma física disminuye.
 Las demás variables (altura, peso, ritmo cardíaco, horas de sueño y presión sanguínea) muestran correlaciones muy débiles con el estado de forma física, con valores cercanos a cero. Esto indica que no hay una relación lineal significativa entre estas variables y si una persona está en buena forma física o no.</p>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="conclusiones">
+<h1>Conclusiones<a class="headerlink" href="#conclusiones" title="Link to this heading">#</a></h1>
+<p>A continuación se presenta un resumen de los hallazgos principales del análisis estadístico y de gráficos:</p>
+<ul class="simple">
+<li><p>Análisis de Distribución y Dispersión:</p></li>
+</ul>
+<p>Las variables de edad, altura, ritmo cardíaco y presión sanguínea mostraron una distribución relativamente plana y simétrica (platicúrtica).
+El peso tuvo una ligera asimetría positiva.
+Las horas de sueño tuvieron una distribución más concentrada y simétrica (mesocúrtica).
+La dispersión fue baja para el ritmo cardíaco, la presión sanguínea y las horas de sueño, pero moderada-alta para la calidad de la nutrición y el índice de actividad.</p>
+<ul class="simple">
+<li><p>Relación con el Estado de Forma Física (is_fit):</p></li>
+<li><p>Correlaciones fuertes y significativas:</p></li>
+</ul>
+<p>Positiva: El estado de forma se asocia fuertemente con el índice de actividad y la calidad de la nutrición.
+Negativa: El estado de forma se asocia negativamente con la edad y el consumo de tabaco.</p>
+<ul class="simple">
+<li><p>Relaciones no lineales:</p></li>
+</ul>
+<p>El peso tiene una relación curvilínea: la mejor forma física se encuentra en un rango de peso intermedio.
+El ritmo cardíaco y la presión sanguínea tienen una relación inversa; valores más bajos se asocian con un mejor estado de forma.
+Las horas de sueño tienen una relación positiva; la mayor probabilidad de estar en forma se encuentra en el rango óptimo de 7-8 horas.
+La altura no mostró una relación significativa con el estado de forma.
+En resumen, los factores más importantes para un buen estado de forma física son un alto índice de actividad, una buena nutrición, un peso en el rango óptimo y la ausencia de tabaquismo.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -2284,22 +2412,13 @@ Las demás variables (altura, peso, ritmo cardíaco, horas de sueño y presión 
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="markdown.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Markdown Files</p>
+        <p class="prev-next-title">Proyecto Visualización de Datos</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="markdown-notebooks.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -2317,7 +2436,7 @@ Las demás variables (altura, peso, ritmo cardíaco, horas de sueño y presión 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Dataset</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Analisis Exploratorio de Datos</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lista-de-variables">Lista de Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocesamiento">Preprocesamiento</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#librerias">Librerías</a></li>
@@ -2338,9 +2457,7 @@ Las demás variables (altura, peso, ritmo cardíaco, horas de sueño y presión 
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-datos-atipicos">Analisis de Datos Atipicos</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-univariado">Analisis univariado</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-univariado">Analisis univariado</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-binarias">Variables Binarias</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-las-variables-binarias">Interpretación de las Variables Binarias:</a></li>
 </ul>
@@ -2404,7 +2521,7 @@ Las demás variables (altura, peso, ritmo cardíaco, horas de sueño y presión 
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-bivariado">Análisis Bivariado</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion">Interpretación:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#medidas-y-analisis-de-los-graficos"><strong>Medidas y Análisis de los Gráficos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#medidas-y-analisis-de-los-graficos">Medidas y Análisis de los Gráficos</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#age-vs-is-fit"><strong>age vs is_fit</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mediana"><strong>Mediana</strong></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rangos-intercuartilicos-iqr"><strong>Rangos Intercuartílicos (IQR)</strong></a></li>
@@ -2423,14 +2540,36 @@ Las demás variables (altura, peso, ritmo cardíaco, horas de sueño y presión 
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Valores Atípicos (Outliers)</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-las-medidas">Análisis de las Medidas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Mediana</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Rango Intercuartílico (IQR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Análisis de las Medidas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Mediana</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Rango Intercuartílico (IQR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Análisis de las Medidas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Mediana</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Rango Intercuartílico (IQR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">Análisis de las Medidas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Mediana</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">Rango Intercuartílico (IQR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">Análisis de las Medidas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">Mediana</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">Rango Intercuartílico (IQR)</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-multivariado">Analisis multivariado</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Interpretación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">Interpretación</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones">Conclusiones</a></li>
 </ul>
 
   </nav></div>

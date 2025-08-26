@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to your Jupyter Book &#8212; My sample book</title>
+    <title>Proyecto Visualización de Datos &#8212; My sample book</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -62,7 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Markdown Files" href="markdown.html" />
+    <link rel="next" title="Analisis Exploratorio de Datos" href="notebooks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -178,17 +178,15 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Welcome to your Jupyter Book
+                    Proyecto Visualización de Datos
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Analisis Exploratorio de Datos</a></li>
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -361,7 +359,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -372,11 +372,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to your Jupyter Book</h1>
+    <h1>Proyecto Visualización de Datos</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Proyecto Visualización de Datos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-general"><strong>Descripción General</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-del-notebook"><strong>Contenido del Notebook</strong></a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -386,21 +397,43 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-your-jupyter-book">
-<h1>Welcome to your Jupyter Book<a class="headerlink" href="#welcome-to-your-jupyter-book" title="Link to this heading">#</a></h1>
-<p>This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a> for more information.</p>
-<p>Check out the content pages bundled with this sample book to see more.</p>
+  <section id="proyecto-visualizacion-de-datos">
+<h1>Proyecto Visualización de Datos<a class="headerlink" href="#proyecto-visualizacion-de-datos" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Realizado por:</strong> Johan Diaz y David Marquez</p></li>
+<li><p><strong>Objetivo principal:</strong> Desarrollar un modelo de clasificación para predecir si una persona tiene un <strong>buen estado físico</strong> o no, basándose en variables como edad, peso, altura, frecuencia cardíaca, presión arterial, horas de sueño, calidad nutricional e índice de actividad.</p></li>
+<li><p><strong>Fase del proyecto:</strong> <strong>Análisis Exploratorio de Datos (EDA)</strong>.</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="descripcion-general">
+<h1><strong>Descripción General</strong><a class="headerlink" href="#descripcion-general" title="Link to this heading">#</a></h1>
+<p>En este <em>notebook</em>, exploraremos en detalle el conjunto de datos proporcionado para comprender la distribución, las relaciones y las características de las variables. El objetivo de esta fase es:</p>
+<ol class="arabic simple">
+<li><p><strong>Limpiar y preprocesar los datos</strong>.</p></li>
+<li><p><strong>Visualizar las distribuciones</strong> de cada variable.</p></li>
+<li><p><strong>Identificar la asimetría y curtosis</strong> de los datos.</p></li>
+<li><p><strong>Analizar la relación entre las variables</strong> y la variable objetivo (<code class="docutils literal notranslate"><span class="pre">estado</span> <span class="pre">físico</span></code>).</p></li>
+<li><p><strong>Detectar valores atípicos</strong> (<em>outliers</em>) y datos faltantes.</p></li>
+</ol>
+<p>Los hallazgos de este análisis guiarán la siguiente fase, que se centrará en la selección de características y el desarrollo del modelo de clasificación.</p>
+<hr class="docutils" />
+</section>
+<section id="contenido-del-notebook">
+<h1><strong>Contenido del Notebook</strong><a class="headerlink" href="#contenido-del-notebook" title="Link to this heading">#</a></h1>
+<ol class="arabic simple">
+<li><p><strong>Carga de datos y preprocesamiento</strong>: Descripción de la carga inicial de los datos y pasos de limpieza.</p></li>
+<li><p><strong>Análisis de variables numéricas</strong>: Interpretación de histogramas y diagramas de caja (box plots) para cada variable.</p></li>
+<li><p><strong>Análisis de la variable objetivo (<code class="docutils literal notranslate"><span class="pre">estado</span> <span class="pre">físico</span></code>)</strong>: Exploración de la distribución de la variable a predecir.</p></li>
+<li><p><strong>Análisis de correlaciones</strong>: Medición y visualización de la relación entre las variables.</p></li>
+<li><p><strong>Resumen de hallazgos del EDA</strong>: Conclusiones clave extraídas del análisis exploratorio que informarán las decisiones futuras.</p></li>
+</ol>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Dataset</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html#analisis-univariado">Analisis univariado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Analisis Exploratorio de Datos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html#analisis-bivariado">Análisis Bivariado</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html#analisis-multivariado">Analisis multivariado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html#conclusiones">Conclusiones</a></li>
 </ul>
 </div>
 </section>
@@ -436,11 +469,11 @@ It does not go in-depth into any particular topic - check out <a class="referenc
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="markdown.html"
+       href="notebooks.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Markdown Files</p>
+        <p class="prev-next-title">Analisis Exploratorio de Datos</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -450,6 +483,24 @@ It does not go in-depth into any particular topic - check out <a class="referenc
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Proyecto Visualización de Datos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#descripcion-general"><strong>Descripción General</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-del-notebook"><strong>Contenido del Notebook</strong></a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
